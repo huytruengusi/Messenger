@@ -285,10 +285,9 @@ const Body: React.FC<BodyProps> = ({ roomId, user, conversation }) => {
             `w-1/4 
             h-1/4 
             rounded-md 
-            fixed 
+            fixed
             right-2 
             bottom-2
-            z-10
             bg-black
             `,
             cameraActive && "hidden"
@@ -298,9 +297,7 @@ const Body: React.FC<BodyProps> = ({ roomId, user, conversation }) => {
           </div>
         </div>
         <video
-          className="w-full 
-            h-full 
-            object-cover"
+          className="w-full h-full bg-black"
           autoPlay
           playsInline
           ref={partnerVideo}

@@ -24,6 +24,7 @@ const RecipveCallModal: React.FC<RecipveCallModalProps> = ({
 
   const handleAccept = () => {
     router.push(`/room/${roomId}`);
+    onClose();
   };
 
   return (
@@ -39,7 +40,9 @@ const RecipveCallModal: React.FC<RecipveCallModalProps> = ({
         </p>
         <div>
           <div className="flex gap-14">
-            <div className="bg-red-500 p-3 cursor-pointer rounded-full">
+            <div
+              className="bg-red-500 p-3 cursor-pointer rounded-full"
+              onClick={() => onClose()}>
               <HiXMark size={32} className="text-white" />
             </div>
             <div
